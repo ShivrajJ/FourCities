@@ -14,7 +14,7 @@ body {
     font-family: 'MedievalSharp', cursive !important;
     overflow:overlay;
     overflow-x:hidden;
-    background-image: url("../Images/bg.jpg");
+    background-image: url("./Images/bg.jpg");
     background-size: 102%;
     backdrop-filter: blur(5px);
 }
