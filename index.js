@@ -17,7 +17,9 @@ window.addEventListener('load', (event) => {
                 console.log("ABC");
                 navbar.removeClass("col-2");
                 navbar.addClass("col-1");
-                middleLogoImage.setAttribute("src", "OnlyTextLogo.png");
+                middleLogoImage.style.opacity = "0%";
+                setTimeout(() => {middleLogoImage.setAttribute("src", "OnlyTextLogo.png")}, 500);
+                setTimeout(() => {middleLogoImage.style.opacity = "100%"}, 500);
                 middleLogo.classList.remove("navMidLogoWithBorders");
                 expandButton.setAttribute("style", "width:60%; height:60%;")
                 navbarColClass = "col-11";
@@ -30,8 +32,10 @@ window.addEventListener('load', (event) => {
             else if(changed) {
                 navbar.addClass("col-2");
                 navbar.removeClass("col-1");
-                middleLogoImage.setAttribute("src", "LogoFinal1Flipped.png");
-                middleLogo.classList.add("navMidLogoWithBorders");
+                middleLogoImage.style.opacity = "0%";
+                setTimeout(() => {middleLogoImage.setAttribute("src", "LogoFinal1Flipped.png")}, 500);
+                setTimeout(() => {middleLogoImage.style.opacity = "100%"}, 500);
+                setTimeout(() => {middleLogo.classList.add("navMidLogoWithBorders")}, 500);
                 expandButton.setAttribute("style", "width:30%; height:30%;")
                 navbarColClass = "col-10";
                 if(collapseMenu.hasClass("col-11")) {
