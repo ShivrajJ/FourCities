@@ -1,19 +1,26 @@
 body {
-    background-color: black;
-    background-image: url('bgimage.png');
+    background-color: black!important;
+    color: white!important;
+    /* background-image: url('bgimage.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50%;
-    background-attachment: fixed;
-}
-.landingDiv {
-    height: 100vh;
+    background-position-y: 50%; */
+    /* background-attachment: fixed; */
 }
 
 .audioDiv {
     right:0%;
-    position: absolute;
+    position: fixed;
     z-index: 10;
+}
+
+.landingContainer {
+    position: fixed;
+    pointer-events: none;
+}
+
+.landingDiv {
+    height: 100vh;
 }
 
 svg {
@@ -35,12 +42,28 @@ nav ul li p {
 }
 .navDiv {
     height: 100%;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+    transition: width 0.5s ease;
 }
 .navMidLogo img {
-    border-top: 1px solid rgba(255, 255, 255, 0.6);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
     /* transform: rotate(90deg); */
     width: 100%;
+}
+.navMidLogoWithBorders img {
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.expandButtonDiv {
+    -moz-transition: height 0.5s ease;
+    -webkit-transition: height 0.5s ease;
+    -o-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -o-transition: width 0.5s ease;
+    transition: width 0.5s ease;
 }
 .collapseMenu {
     -webkit-transition: width 0.5s ease;
@@ -66,6 +89,10 @@ nav ul li p {
 .searchDiv input {
     background-color: rgba(0,0,0,0);
     color:white;
+    border: none;
+}
+.searchDiv input:focus {
+    outline: none;
 }
 .resourcesDiv {
     font-size: 2rem;
@@ -84,4 +111,30 @@ nav ul li p {
 }
 .resourcesDiv a:hover {
     color: goldenrod;
+}
+.fillerContainer {
+    height: 100vh;
+    background-color: black;
+    background-image: url('bgimage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+.welcomeDiv {
+    text-align: center;
+}
+.welcomeDiv h1 {
+    font-size: 8rem;
+}
+.welcomeDiv h3 {
+    font-size: 4rem;
+}
+.welcomeDiv p {
+    font-size: 1.5rem;
+}
+.welcomeDiv a {
+    color:goldenrod;
+}
+.welcomeDiv a:hover {
+    color:white;
 }
