@@ -54,6 +54,11 @@ nav ul li p {
 .navMidLogo img {
     /* transform: rotate(90deg); */
     width: 100%;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    opacity: 100%;
 }
 .navMidLogoWithBorders img {
     border-top: 1px solid rgba(255, 255, 255, 0.6);
@@ -132,9 +137,12 @@ nav ul li p {
 }
 .welcomeDiv h3 {
     font-size: 4rem;
+    margin: 2.6rem 0 2.6rem 0;
 }
 .welcomeDiv p {
     font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 2rem;
 }
 .welcomeDiv a {
     color:goldenrod;
