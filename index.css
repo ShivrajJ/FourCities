@@ -19,6 +19,10 @@ body {
     pointer-events: none;
 }
 
+.navDiv, #collapseMenu {
+    pointer-events: all;
+}
+
 .landingDiv {
     height: 100vh;
 }
